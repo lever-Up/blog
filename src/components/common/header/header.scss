@@ -1,0 +1,123 @@
+@import "../../../assets/styles/common";
+@import "../../../assets/styles/theme";
+
+.my-header {
+  height: 72px;
+  width: 100%;
+  justify-content: space-between;
+  position: fixed;
+  background: #FFFFFF;
+  border-bottom: 1px solid $border-color;
+  box-shadow: 0 2px 8px 0 rgba(7,17,27,.2);
+  z-index: 999;
+  color: $font-color;
+  a{
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  a:hover{
+    color: $font-active-color;
+  }
+  .header-log {
+    img{
+      height: 40px;
+      padding: 5px 10px;
+    }
+  }
+  ul > li.map {
+    position: relative;
+    padding: 0 16px;
+    line-height: 58px;
+    border-bottom: 2px solid transparent;
+  }
+  ul > li.map:hover {
+    cursor: pointer;
+    //border-bottom: 2px solid $border-active-color;
+    a:hover{
+      color: $font-active-color;
+    }
+    div {
+      display: block;
+    }
+  }
+  ul > li.map > div {
+    position: absolute;
+    top: 67px;
+    left: -10px;
+    border-radius:0 0 5px 5px;
+    line-height: 28px;
+    padding: 10px;
+    text-align: center;
+    background: #FFF;
+    border: 1px solid $border-color;
+    border-top: 0;
+    display: none;
+    box-shadow: 0 8px 16px 0 rgba(7,17,27,.2);
+    box-sizing: border-box;
+  }
+  ul > li.map > div > i{
+    background: url("../../../assets/icons/up-icon.png") no-repeat;
+    width: 14px;
+    height: 8px;
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -7px;
+  }
+  ul > li.map > div > a{
+    //background: url("../../../assets/icons/up-icon.png") no-repeat;
+    display: block;
+    width: 100px;
+    padding: 10px;
+  }
+  ul > li.map > div > a:hover {
+    background: $background-active;
+  }
+  .header-left{
+  }
+  .header-center{
+
+  }
+  .header-search{
+
+  }
+  .header-right{
+    .header-search{
+      line-height: 60px;
+      min-width: 50px;
+      padding: 0 10px;
+      cursor: pointer;
+      .header-search-inputDiv{
+        display: none;
+      }
+      .search-title{
+        text-decoration: underline;
+      }
+    }
+    .header-search:hover{
+      .search-title{
+        font-size: 10px;
+        color: orange;
+        margin-left: 10px;
+      }
+      .search-title:after{
+       content: '✔';
+      }
+      .header-search-inputDiv{
+        display: block;
+        input{
+          border-color: orange;
+          color: orange;
+        }
+      }
+    }
+    input{
+      height: 30px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 0 10px;
+    }
+  }
+}
