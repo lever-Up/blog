@@ -10,13 +10,26 @@ export function isWeiXin () {
   return false
 }
 
-// 判断 ios || android
+// 判断系统属性
 export function checkSystem () {
-  if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-    return 'ios'
-  } else {
-    return 'android'
+  const u = navigator.userAgent || navigator.appVersion
+  const sys = {
+    trident: u.indexOf('Trident') > -1, // IE
+    presto: u.indexOf('Presto') > -1, // opera
+    webKit: u.indexOf('AppleWebKit') > -1, // apple gogole
+    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') === -1, // firefox
+    mobile: !!u.match(/AppleWebKit.*Mobile.*/), // is mobile
+    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), // ios
+    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, // android or uc
+    iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, // iPhone or QQHD
+    iPad: u.indexOf('iPad') > -1, // iPad
+    webApp: u.indexOf('Safari') === -1, // web
+    google: u.indexOf('Chrome') > -1,
+    wx: isWeiXin(), // 是否微信
+    qq: u.match(/\sQQ/i) === 'qq' // 是否QQ
   }
+  console.log('浏览器属性', sys)
+  return sys
 }
 
 // getUrlParams
