@@ -14,11 +14,9 @@ import * as Utils from '../assets/lib/utils'
 export default {
   name: 'Video',
   data () {
-    console.log(Utils.isWeiXin())
-    console.log(Utils.checkSystem())
     return {
       isWeiXin: Utils.isWeiXin(),
-      isIos: Utils.checkSystem() === 'ios'
+      isIos: Utils.checkSystem().ios
     }
   },
   props: {
