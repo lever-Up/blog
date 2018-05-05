@@ -39,6 +39,8 @@ module.exports = {
     "keyword-spacing": 0,
 
     "space-after-keywords": [0, "always"],
+
+    "no-trailing-spaces": 0,
   }
 }
 
