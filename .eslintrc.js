@@ -26,13 +26,15 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
+    "no-unused-vars": process.env.NODE_ENV === 'production' ? 'error' : 'off',
+
     'no-extra-semi': 0,
 
     "indent": [0, 2, 4],
 
     "semi": [0],
 
-    "space-before-function-paren": [2, "always"],
+    "space-before-function-paren": [0, "always"],
 
     "one-var": 0,
 
@@ -41,6 +43,8 @@ module.exports = {
     "space-after-keywords": [0, "always"],
 
     "no-trailing-spaces": 0,
+
+    "eol-last": 0,
   }
 }
 
