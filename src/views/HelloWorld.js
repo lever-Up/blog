@@ -1,4 +1,4 @@
-import { mapState, mapActions } from 'vuex'
+import { mapState, mapActions, mapMutations, mapGetters } from 'vuex'
 
 export default {
   name: 'HelloWorld',
@@ -7,10 +7,30 @@ export default {
       msg: 'Welcome to Your Vue.js App',
     }
   },
-  computed: mapState({
-    count: state => state.example.count
-  }),
-  methods: mapActions('example', [
-    'asyncInc', 'inc'
-  ]),
+  created(){
+    console.log(
+      ...mapGetters('example',[
+        'compareMax'
+      ])
+    )
+  },
+  // computed: mapState('example',['count']),
+  computed: {
+    ...mapState('example',{
+      count: state => state.count
+    }),
+    ...mapGetters('example',[
+      'compareMax'
+    ])
+    
+  },
+  methods: {
+    ...mapActions('example', [
+      'asyncInc'
+    ]),
+    
+    ...mapMutations('example',[
+      'inc'
+    ]),
+  },
 }

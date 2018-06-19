@@ -4,12 +4,12 @@ export default {
   namespaced: true,
 
   state: {
-    count: 0,
+    count: 10,
   },
 
   getters: {
-    test_multiply_ten: state => {
-      return state.count * 10
+    compareMax: state => max => {
+      return state.count > max
     }
   },
 
@@ -31,7 +31,7 @@ export default {
   /* 同步改变state */
   mutations: {
     inc(state, {count}) {
-      state.count = count;
+      state.count += count;
     }
   }
 

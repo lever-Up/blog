@@ -2,33 +2,17 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>count: {{count}}</h2>
-    <el-button @click="inc">增加</el-button>
+    <h2>compareMax 50: {{compareMax(50)}}</h2>
+    <el-button @click="inc({count: 1})">增加</el-button>
     <el-button @click="asyncInc">异步增加</el-button>
+    <br/>
+    <br/>
     <el-row>
       <el-col :span="24"><div class="grid-content bg-purple-dark"></div></el-col>
     </el-row>
     <el-row>
       <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
       <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="8"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="8"><div class="grid-content bg-purple"></div></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
-    </el-row>
-    <el-row>
-      <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple"></div></el-col>
-      <el-col :span="4"><div class="grid-content bg-purple-light"></div></el-col>
     </el-row>
   </div>
 </template>
@@ -55,7 +39,6 @@ a {
   margin-bottom: 20px;
 &:last-child {
    margin-bottom: 0;
-  background: red;
  }
 }
 .el-col {
