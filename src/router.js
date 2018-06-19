@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'HelloWorld',
       component: HelloWorld
+    }, {
+      path: '*',
+      component: function (resolve) {
+        require(['./views/notFound/NoFound.vue'], resolve)
+      }
     }
   ]
 })

@@ -6,6 +6,8 @@
 
 > iconfont: http://iconfont.cn/manage/index?manage_type=myprojects&projectId=649183
 
+> 页面排版参考：http://www.shejidaren.com/40-creative-web-design-layout.html
+
 ## Build Setup
 
 ``` bash

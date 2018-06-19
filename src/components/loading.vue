@@ -1,59 +1,96 @@
 <template>
   <transition name="fade">
-    <div class="loading-background">
-      <img v-show="show" id="loading-background" alt="loading-background" src=""/>
+    <div v-if="show" class="loading-background">
+      <div class="spinner">
+        <div class="double-bounce1"></div>
+        <div class="double-bounce2"></div>
+      </div>
     </div>
-    
   </transition>
 </template>
 
 <script>
-import RainyDay from "../lib/rainyday.min.js";
-
-export default {
-  name: "loading",
-  data() {
-    return {
-      loading: false
-    };
-  },
-  computed: {
-    show() {
-      return this.$store.state.isLoading;
+  export default {
+    name: "loading",
+    computed: {
+      show() {
+        return this.$store.state.isLoading;
+      }
     }
-  },
-  mounted() {
-    // setTimeout(() => {
-      const image = document.getElementById("loading-background");
-      image.onload = function() {
-        const engine = new RainyDay({
-          image: this
-        });
-        engine.rain([[1, 2, 8000]]);
-        engine.rain([[3, 3, 0.88], [5, 5, 0.9], [6, 2, 1]], 100);
-
-        this.loading = true;
-      };
-      image.crossOrigin = "anonymous";
-      image.src = "http://i.imgur.com/N7ETzFO.jpg";
-    // }, 0);
-  }
-};
+  };
 </script>
 
 <style scoped>
-.loading-background{
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
-  opacity: 0;
-}
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity 0.5s;
+  }
+
+  .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */{
+    opacity: 0;
+  }
+
+  .loading-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #fff;
+  }
+
+  .spinner {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+  }
+
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    /*background-color: #67CF22;*/
+    background: linear-gradient(92deg, #f35626, #feab3a);
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: bounce 2.0s infinite ease-in-out;
+    animation: bounce 2.0s infinite ease-in-out;
+  }
+
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+
+  @-webkit-keyframes bounce {
+    0%{
+      background-position: 0% 0%;
+      -webkit-transform: scale(0.0)
+    }
+    50% {
+      background-position: 50% 100%;
+      -webkit-transform: scale(1.0)
+    }
+    100% {
+      background-position: 100% 0%;
+      -webkit-transform: scale(0.0)
+    }
+  }
+
+  @keyframes bounce {
+    0%, 100% {
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    }
+    50% {
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
 </style>
