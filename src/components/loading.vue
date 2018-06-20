@@ -35,7 +35,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: #fff;
+    /* background: #fff; */
+    background: rgba(0, 0, 0, 0.85);
   }
 
   .spinner {
