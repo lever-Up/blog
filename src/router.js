@@ -13,6 +13,12 @@ export default new Router({
         require(['./views/home/Home.vue'], resolve)
       }
     }, {
+      path: '/article/articleEdit',
+      name: 'ArticleEdit',
+      component: function (resolve) {
+        require(['./views/article/articleEdit/AritcleEdit.vue'], resolve)
+      }
+    }, {
       path: '/test',
       name: 'HelloWorld',
       component: HelloWorld
