@@ -1,0 +1,54 @@
+@import "../index.scss";
+.home{
+  background: $main_bgColor;
+  padding: 10px 90px;
+  width: 100%;
+  min-height: 750px;
+  > div{
+    width: 1152px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 28px;
+    background: #fff;
+    display: flex;
+    box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
+  }
+
+  .banner-box{
+    height: 495px;
+    > div{
+      height: 100%;
+    }
+    .banner-card{
+      width: 56%;
+      background: #d2335c;
+    }
+    .banner-insert{
+      width: 44%;
+      background: #feab3a;
+    }
+  }
+
+  .content-box{
+    height: 570px;
+  }
+
+  .major-blog{
+
+  }
+  .blog-img_card{
+    height: 500px;
+  }
+  .blog-txt_card{
+    height: 400px;
+  }
+
+  .blog-talents{
+    height: 220px;
+  }
+
+  .blog-count{
+    height: 95px;
+  }
+}
