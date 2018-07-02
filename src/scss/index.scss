@@ -3,3 +3,38 @@ $main_bgColor: #CBD3E0; // 背景主打色调
 $main_btnColor: #d2335c; // 按钮主打色调
 
 $borderRadius: 8px;
+
+@mixin ellipsis($line){
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.borderTL{
+  border-top-left-radius: $borderRadius;
+}
+.borderTR{
+  border-top-right-radius: $borderRadius;
+}
+.borderBL{
+  border-bottom-left-radius: $borderRadius;
+}
+.borderBR{
+  border-bottom-right-radius: $borderRadius;
+}
+
+.position-mid{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mr5{
+  margin-right: 5px;
+}
+.mr10{
+  margin-right: 10px;
+}
