@@ -2,7 +2,11 @@ $main_bgColor: #CBD3E0; // 背景主打色调
 
 $main_btnColor: #d2335c; // 按钮主打色调
 
-$borderRadius: 8px;
+$assist_btnColor: #13ce66;
+
+$borderRadius: 8px;      // border 圆角
+
+$borderColor: #97a8be;  // border 颜色
 
 @mixin ellipsis($line){
   display: -webkit-box;
@@ -32,9 +36,16 @@ $borderRadius: 8px;
   transform: translate(-50%, -50%);
 }
 
-.mr5{
-  margin-right: 5px;
+$class : meng;
+
+.#{$class} {
+  width : 20px;
 }
-.mr10{
-  margin-right: 10px;
+
+
+@mixin flex-center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
