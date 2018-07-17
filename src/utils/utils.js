@@ -2,6 +2,7 @@
  * util js工具类
  * @author wds
  * */
+import dayJs from 'dayjs';
 
 export const THEMES = [
   '#4caf50',
@@ -29,4 +30,8 @@ export const THEMES = [
 
 export function randomColor() {
   return THEMES[Math.floor(Math.random() * THEMES.length + 1)];
+}
+
+export function formatTime(date) {
+  return dayJs(date).format('MMM DD, YYYY');
 }

@@ -1,5 +1,5 @@
 import dayJs from 'dayjs';
-import {randomColor} from '../../lib/utils'
+import {randomColor} from '../../utils/utils'
 
 const bannerImages = [
   {

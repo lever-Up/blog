@@ -5,7 +5,9 @@ import App from './App'
 import router from './router'
 import store from './store'
 import ElementUI from 'element-ui';
-import config from './components';
+import globalComponents from './components';
+import globalUtils from './utils';
+
 import 'element-ui/lib/theme-chalk/index.css';
 import 'mavon-editor/dist/css/index.css';
 
@@ -13,8 +15,10 @@ Vue.config.productionTip = false
 
  /* ElementUI */
 Vue.use(ElementUI);
-/* 自定义全局组件 */
-Vue.use(config);
+/* 全局组件 */
+Vue.use(globalComponents);
+/* 全局方法 */
+Vue.use(globalUtils);
 
 /* eslint-disable no-new */
 new Vue({

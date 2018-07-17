@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import RainyDay from "../../lib/rainyday.min.js";
+import RainyDay from "../../utils/lib/rainyday.min.js";
 
 export default {
   name: "singIn",

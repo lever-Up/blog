@@ -14,6 +14,12 @@
       <el-col :span="12"><div class="grid-content bg-purple"></div></el-col>
       <el-col :span="12"><div class="grid-content bg-purple-light"></div></el-col>
     </el-row>
+
+    <h1>测测测测测</h1>
+
+    <div style="width: 500px;">
+      <carousel-card :datas="datas"></carousel-card>
+    </div>
   </div>
 </template>
 

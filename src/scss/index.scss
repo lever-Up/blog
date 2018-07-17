@@ -36,10 +36,20 @@ $borderColor: #97a8be;  // border 颜色
   transform: translate(-50%, -50%);
 }
 
-$class : meng;
 
-.#{$class} {
-  width : 20px;
+@mixin pxBorderLeftRight($color,$position) {
+  content: " ";
+  position: absolute;
+  #{$position}: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  border-#{$position}: 1px solid $color;
+  color: $color;
+  -webkit-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+  -webkit-transform: scaleX(0.5);
+  transform: scaleX(0.5);
 }
 
 
