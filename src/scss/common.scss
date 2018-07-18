@@ -9,22 +9,28 @@
   url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.svg") format("svg");
 }
 
+@font-face {
+  font-family: 'ArialBlack';
+  font-weight: normal;
+  font-style: normal;
+  src: url('https://res.suv666.com/carhouse/tuner/ab.woff'),
+  url('https://res.suv666.com/carhouse/tuner/ab.eot#iefix') format('embedded-opentype'),
+  url('https://res.suv666.com/carhouse/tuner/ab.woff') format('woff'),
+  url('https://res.suv666.com/carhouse/tuner/ab.TTF') format('truetype'),
+  url('https://res.suv666.com/carhouse/tuner/ab.svg') format('svg');
+}
+
+@font-face {
+  font-family: Gobold;
+  src: url("https://img.suv666.com/ui/ycyh/3_0/wxapp/Gobold%20Bold.ttf");
+}
+
 #app {
   /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-  font-family: GKAI00MP;
+  font-family: ArialBlack;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
-}
-
-/* 渐变字样式 */
-.site__title {
-  color: #f35626;
-  background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: hue 2s infinite linear;
-  -webkit-animation: hue 2s infinite linear;
 }
 
 /* border 圆角 */
@@ -61,3 +67,15 @@ $border-sile: (tl:top-left, tr:top-right, bl:bottom-left, br:bottom-right);
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+.position-relative{
+  position: relative;
+}
+
+.flex-column{
+  @include flex()
+}
+.flex-row{
+  @include flex('row')
+}
+

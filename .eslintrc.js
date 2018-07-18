@@ -49,7 +49,13 @@ module.exports = {
 
     "comma-dangle": 0,
 
-    "quotes": [0, "always"]
+    "quotes": [0, "always"],
+
+    "no-extend-native": 0,
+
+    "no-native-reassign": 0,
+
+    "no-array-constructor": 0,
   }
 }
 

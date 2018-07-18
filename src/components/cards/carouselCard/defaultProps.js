@@ -2,7 +2,7 @@ export default {
   datas: {
     type: Array,
     required: true,
-    default: [],
+    default: () => ([]),
   },
   onclick: {
     type: Function,

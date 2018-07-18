@@ -1,5 +1,5 @@
 <template>
-  <div class="po imgLiquidFill imgLiquid" :style="`width:${ width }px;height: ${ height }px`">
+  <div class="fill-image" :style="`width:${ width }px;height: ${ height }px`">
     <a :href="data.img" target="_blank" :title="data.title">
       <img alt="TEST" :src="data.img"/>
     </a>
@@ -29,7 +29,6 @@
     },
     mounted() {
       this.$nextTick(function () {
-        $(".imgLiquidFill").imgLiquid({fill: true});
       })
     }
   }

@@ -1,6 +1,9 @@
 import dayJs from 'dayjs';
 import {randomColor} from '../../utils/utils'
 
+// 测试数据
+import {carouseData} from './data';
+
 const bannerImages = [
   {
     id: 1,
@@ -36,7 +39,7 @@ export default {
   name: 'Home',
   data() {
     return {
-      bannerImages,
+      bannerDatas: carouseData,
       bannerArticles
     }
   },

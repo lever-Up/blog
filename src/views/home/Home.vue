@@ -3,18 +3,7 @@
     <!--博文广告轮播-->
     <div class="banner-box">
       <div class="banner-card">
-        <el-carousel :autoplay="false">
-          <el-carousel-item v-for="banner in bannerImages" :key="banner.id">
-            <div class="carousel-img borderTL borderBL" :style="{backgroundImage: `url(${banner.url})`}">
-              <div class="text-content">
-                <div class="time">{{formatTime(bannerArticles[1].createTime)}}</div>
-                <div class="title">{{bannerArticles[1].title}}</div>
-                <div class="desc">{{bannerArticles[1].desc}}</div>
-                <button class="read-more">READ MORE</button>
-              </div>
-            </div>
-          </el-carousel-item>
-        </el-carousel>
+        <carousel-card :datas="bannerDatas"/>
       </div>
       <div class="banner-insert">
         <div class="insert-box left">
