@@ -1,29 +1,36 @@
 <template>
-  <div class="imgLiquidFill imgLiquid" style="width:100%; height:200px;">
-    <a :href="img"  target="_blank" title="test">
-      <img alt="TEST" :src="img"/>
+  <div class="po imgLiquidFill imgLiquid" :style="`width:${ width }px;height: ${ height }px`">
+    <a :href="data.img" target="_blank" :title="data.title">
+      <img alt="TEST" :src="data.img"/>
     </a>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'svgIcon',
-  props: {
-    data: {
-      type: Object,
-      required: true,
-      default: () => ({
-        img: '',
-      })
+  export default {
+    name: 'fill-image',
+    props: {
+      data: {
+        type: Object,
+        required: true,
+        default: () => ({
+          img: '',
+          title: '',
+        })
+      },
+      width: {
+        type: [Number, String],
+        default: 200,
+      },
+      height: {
+        type: [Number, String],
+        default: 200,
+      }
     },
+    mounted() {
+      this.$nextTick(function () {
+        $(".imgLiquidFill").imgLiquid({fill: true});
+      })
+    }
   }
-}
 </script>
-<style scoped>
-  .default{
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-  }
-</style>

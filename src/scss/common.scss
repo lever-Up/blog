@@ -1,3 +1,22 @@
+@import "./mixin.scss";
+
+@font-face {
+  font-family: "GKAI00MP";
+  src: url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.woff2") format("woff2"),
+  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.woff") format("woff"),
+  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.ttf") format("truetype"),
+  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.eot") format("embedded-opentype"),
+  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.svg") format("svg");
+}
+
+#app {
+  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
+  font-family: GKAI00MP;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+
 /* 渐变字样式 */
 .site__title {
   color: #f35626;
@@ -6,4 +25,39 @@
   -webkit-text-fill-color: transparent;
   animation: hue 2s infinite linear;
   -webkit-animation: hue 2s infinite linear;
+}
+
+/* border 圆角 */
+$borderRadius: 8px;      // border 圆角
+$border-sile: (tl:top-left, tr:top-right, bl:bottom-left, br:bottom-right);
+@each $key,$value in $border-sile{
+  .border-radius-#{$key} {
+    border-#{$value}-radius: $borderRadius;
+  }
+}
+
+/* read-more 按钮 */
+.read-more{
+  font-size: 12px;
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .5s;
+  opacity: .5;
+  width: 120px;
+}
+.read-more:hover{
+  opacity: 1;
+}
+
+/* position 居中 */
+.position-mid{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

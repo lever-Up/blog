@@ -2,6 +2,7 @@
 import SvgIcon from './SvgIcon.vue';
 import {toolbars, mavonEditor} from './MdReader';
 import { CarouselCard } from './cards/cards.js';
+import Image from './Image.vue';
 
 /********************************
  * 组件export
@@ -16,6 +17,7 @@ export { mavonEditor, toolbars }; // md 编辑器
 const components = [
   SvgIcon,
   CarouselCard,
+  Image
 ];
 
 // Vue install

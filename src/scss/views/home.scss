@@ -1,4 +1,5 @@
 @import "../index.scss";
+
 .home{
   background: $main_bgColor;
   padding: 10px 90px;
@@ -283,12 +284,12 @@
       .tool-box{
         width: 83px;
         display: flex;
-        @include flex-center;
+        @include flex();
         flex-direction: column;
         >div{
           flex: 1;
           width: 100%;
-          @include flex-center;
+          @include flex();
           border-left: 1px solid $borderColor;
         }
         div:first-child{

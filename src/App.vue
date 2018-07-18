@@ -17,5 +17,5 @@
 </script>
 
 <style lang="sass">
-  @import "./scss/index.scss";
+  @import "./scss/index.scss"
 </style>

@@ -2,7 +2,7 @@ import { mapState, mapActions, mapMutations, mapGetters } from 'vuex'
 
 const datas = [{
   id: 1,
-  img: 'https://vignette.wikia.nocookie.net/villainstournament/images/7/7c/Woody.jpg/revision/latest?cb=20170630110634',
+  img: 'http://pamnpeizp.bkt.clouddn.com/woody.jpg',
   createTime: new Date('2018-07-17'),
   title: '测试',
   desc: '这是一条测试数据',

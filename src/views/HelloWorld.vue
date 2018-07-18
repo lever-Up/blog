@@ -20,10 +20,14 @@
     <div style="width: 500px;">
       <carousel-card :datas="datas"></carousel-card>
     </div>
+
+    <fill-image :data="datas[0]" :width="500" :height="200"/>
+
   </div>
 </template>
 
-<script src="./HelloWorld.js"></script>
+<script src="./HelloWorld.js">
+</script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
