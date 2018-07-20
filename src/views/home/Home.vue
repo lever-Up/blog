@@ -2,9 +2,9 @@
   <div class="home">
     <!--博文广告轮播-->
     <div class="banner-box">
-      <div class="banner-card">
-        <carousel-card :datas="bannerDatas"/>
-      </div>
+      <carousel-card :datas="bannerDatas" class="banner-card"/>
+      <pagination-card :data="paginationData"></pagination-card>
+
       <div class="banner-insert">
         <div class="insert-box left">
           <div class="text-content">

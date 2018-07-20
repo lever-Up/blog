@@ -7,7 +7,7 @@
   text-overflow: ellipsis;
 }
 
-@mixin flex($sile: 'column'){
+@mixin flex($sile: column){
   display: flex;
   flex-direction: $sile;
 }

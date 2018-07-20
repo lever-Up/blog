@@ -1,0 +1,46 @@
+.pagination-card{
+  .cover{
+    width: 15px;
+    height: 100%;
+  }
+  .cover-item{
+    height: 45%;
+    background: #fff;
+  }
+  .triangle_border{
+    width: 0;
+    height: 10%;
+    border-style: solid;
+  }
+
+  .insert-box.left {
+    .cover{
+      float: left;
+    }
+    .triangle_border{
+      border-width: 10px 15px 10px 0;
+      border-color: #fff transparent #fff #fff;
+    }
+    .insert-img{
+      margin-left: -15px;
+    }
+  }
+  .insert-box.right {
+    .cover{
+      float: right;
+    }
+    .triangle_border{
+      border-width: 10px 0 10px 15px;
+      border-color: #fff #fff #fff transparent;
+    }
+    .insert-img{
+      margin-right: -15px;
+    }
+  }
+
+  .insert-img{
+    height: 100%;
+    background-size: cover;
+    position: relative;
+  }
+}

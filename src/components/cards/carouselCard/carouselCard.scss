@@ -1,31 +1,6 @@
 @import "../../../scss/index.scss";
 
 .carousel-card {
-  .text-content {
-    width: 60%;
-    height: 80%;
-    opacity: .5;
-    justify-content: flex-start;
-    .time {
-      font-size: 16px;
-      color: #fff;
-      margin-bottom: 110px;
-    }
-    .title {
-      font-size: 30px;
-      color: #fff;
-      margin-bottom: 30px;
-      @include ellipsis(1);
-    }
-    .desc {
-      font-size: 14px;
-      color: #fff;
-      letter-spacing: 2px;
-      margin-bottom: 30px;
-      @include ellipsis(3);
-    }
-  }
-
   .carousel-img {
     background-size: cover;
     height: 100%;
@@ -56,11 +31,9 @@
       border-radius: 50%;
     }
     &__indicator.is-active button {
-      background-image: url("../../../images/icons/dian.png");
-      background-repeat: no-repeat;
+      background: url("../../../images/icons/dian.png") no-repeat transparent;
       width: 20px;
       height: 20px;
-      background-color: transparent;
       background-size: 20px;
     }
   }

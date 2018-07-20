@@ -2,37 +2,22 @@ import dayJs from 'dayjs';
 import {randomColor} from '../../utils/utils'
 
 // 测试数据
-import {carouseData} from './data';
+import {carouseData, paginationData} from './data';
 
-const bannerImages = [
-  {
-    id: 1,
-    url: 'http://pamnpeizp.bkt.clouddn.com/react.jpg',
-  }, {
-    id: 2,
-    url: 'http://pamnpeizp.bkt.clouddn.com/vue.jpg'
-  }, {
-    id: 3,
-    url: 'http://pamnpeizp.bkt.clouddn.com/vue.jpg'
-  }, {
-    id: 4,
-    url: 'http://pamnpeizp.bkt.clouddn.com/vue.jpg'
-  }
-];
 const bannerArticles = [
   {
     id: 1,
-    title: 'JavaScript + HTML + Css',
+    title: '火影忍者',
     desc: '哈哈哈哈哈哈哈哈哈哈哈哈哈，哈哈哈哈哈哈哈哈哈哈哈哈。哈哈哈哈哈哈哈哈哈，哈哈哈哈哈哈哈哈哈哈哈哈哈',
     createTime: new Date(),
-    img: 'http://pamnpeizp.bkt.clouddn.com/react.jpg'
+    img: 'http://img4q.duitang.com/uploads/item/201505/08/20150508155454_vJMeU.jpeg'
   },
   {
     id: 2,
-    title: '精美Css3效果',
+    title: '火影忍者',
     desc: '哈哈哈哈哈哈哈哈哈哈哈哈哈，哈哈哈哈哈哈哈哈哈哈哈哈。哈哈哈哈哈哈哈哈哈，哈哈哈哈哈哈哈哈哈哈哈哈哈',
     createTime: new Date(),
-    img: 'http://pamnpeizp.bkt.clouddn.com/react.jpg'
+    img: 'http://img4q.duitang.com/uploads/item/201505/08/20150508155454_vJMeU.jpeg'
   },
 ];
 export default {
@@ -40,6 +25,7 @@ export default {
   data() {
     return {
       bannerDatas: carouseData,
+      paginationData,
       bannerArticles
     }
   },
