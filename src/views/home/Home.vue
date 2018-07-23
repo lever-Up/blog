@@ -3,43 +3,9 @@
     <!--博文广告轮播-->
     <div class="banner-box">
       <carousel-card :datas="bannerDatas" class="banner-card"/>
-      <pagination-card :data="paginationData"></pagination-card>
-
       <div class="banner-insert">
-        <div class="insert-box left">
-          <div class="text-content">
-            <div class="time">{{formatTime(bannerArticles[0].createTime)}}</div>
-            <div class="title">{{bannerArticles[0].title}}</div>
-            <div class="desc">{{bannerArticles[0].desc}}</div>
-          </div>
-          <div class="img-box">
-            <div class="insert-img borderTR" :style="{backgroundImage: `url(${bannerArticles[0].img})`}">
-              <div class="cover">
-                <div class="cover-item"></div>
-                <div class="triangle_border"></div>
-                <div class="cover-item"></div>
-              </div>
-              <button class="read-more position-mid">READ MORE</button>
-            </div>
-          </div>
-        </div>
-        <div class="insert-box right">
-          <div class="img-box">
-            <div class="insert-img borderBR" :style="{backgroundImage: `url(${bannerArticles[0].img})`}">
-              <div class="cover">
-                <div class="cover-item"></div>
-                <div class="triangle_border"></div>
-                <div class="cover-item"></div>
-              </div>
-              <button class="read-more position-mid">READ MORE</button>
-            </div>
-          </div>
-          <div class="text-content">
-            <div class="time">{{formatTime(bannerArticles[1].createTime)}}</div>
-            <div class="title">{{bannerArticles[1].title}}</div>
-            <div class="desc">{{bannerArticles[1].desc}}</div>
-          </div>
-        </div>
+        <pagination-card :data="paginationData" ></pagination-card>
+        <pagination-card side="right" :data="paginationData"></pagination-card>
       </div>
     </div>
     <!--博文广告轮播END-->

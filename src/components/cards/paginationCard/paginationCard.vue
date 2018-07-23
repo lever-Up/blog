@@ -43,3 +43,7 @@
     </template>
   </div>
 </template>
+<script src="./paginationCard.js"></script>
+<style lang="scss">
+  @import "./paginationCard.scss";
+</style>

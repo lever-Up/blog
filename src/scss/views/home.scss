@@ -6,18 +6,18 @@
   width: 100%;
   min-height: 750px;
   > div{
-    width: 1152px;
+    min-width: 1152px;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     margin-bottom: 28px;
     display: flex;
     box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
-    border-radius: $borderRadius;
   }
 
   .banner-box{
-    height: 495px;
+    height: 496px;
     background-color: #fff;
     .banner-card{
       width: 56%;
@@ -25,190 +25,6 @@
     }
     .banner-insert{
       width: 44%;
-    }
-  }
-
-  .content-box{
-    box-shadow: none;
-    margin-top: 35px;
-    > div{
-      height: 100%;
-      border-radius: $borderRadius;
-    }
-    .content-left{
-      flex: 3;
-      margin-right: 28px;
-
-      >div{
-        margin-bottom: 35px;
-        background-color: #fff;
-        border-radius: $borderRadius;
-      }
-    }
-    .content-img_footer{
-      height: 40px;
-      line-height: 40px;
-      color: #fff;
-      background-color: rgba(58, 142, 230, .3);
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      display: flex;
-      justify-content: space-between;
-      padding: 0 20px;
-      align-items: center;
-    }
-    .content-right{
-      flex: 1;
-    }
-
-    .content_1{
-      .img-box{
-        height: 400px;
-      }
-    }
-
-    .content_2{
-      height: 200px;
-      display: flex;
-      .img-box{
-        width: 200px;
-        height: 200px;
-        position: relative;
-      }
-      .article-dec{
-        width: 560px;
-      }
-      .tool-box{
-        width: 83px;
-        display: flex;
-        @include flex();
-        flex-direction: column;
-        >div{
-          flex: 1;
-          width: 100%;
-          @include flex();
-          border-left: 1px solid $borderColor;
-        }
-        div:first-child{
-          border-bottom: 1px solid $borderColor;
-        }
-      }
-    }
-
-    .content_3{
-      .line-title{
-        background-color: #ecf0f4;
-        font-size: 20px;
-        padding: 15px 24px;
-      }
-      .line-content{
-        padding: 0 35px;
-
-        .line-article{
-          height: 200px;
-          display: flex;
-          align-items: center;
-          .img-box{
-            width: 150px;
-            height: 150px;
-            position: relative;
-            border-radius: $borderRadius;
-            .cover{
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              right: 0;
-              height: 30px;
-              line-height: 30px;
-              color: #fff;
-              text-align: center;
-              width: 100%;
-            }
-          }
-          .article-dec{
-            width: 620px;
-            height: 100%;
-            border-bottom: 1px solid #ecf0f4;
-            h1{
-              font-size: 22px;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  .no-border{
-    border: none;
-  }
-
-  .like-icon{
-    color: $main_btnColor;
-  }
-
-  .talk-icon{
-    color: $assist_btnColor;
-  }
-
-  .major-blog{
-
-  }
-
-  .blog-img_card{
-    height: 500px;
-  }
-
-  .blog-txt_card{
-    height: 400px;
-  }
-
-  .blog-talents{
-    height: 220px;
-  }
-
-  .blog-count{
-    height: 95px;
-  }
-
-  .img-btn{
-    position: absolute;
-    color: #fff;
-    background-color: #d2335c;
-    padding: 6px 10px;
-    border-radius: 6px;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    transition: all .5s;
-  }
-
-  .img-btn:hover{
-    background: #d2455a;
-  }
-
-  .article-dec{
-    padding: 15px 24px;
-    h1{
-      font-size: 28px;
-      font-weight: bold;
-      line-height: 56px;
-      @include ellipsis(1)
-    }
-    .dec-line{
-      text-indent: 20px;
-      font-size: 14px;
-      line-height: 1.5;
-      letter-spacing: 1px;
-      @include ellipsis(2)
-    }
-    p{
-      text-indent: 20px;
-      font-size: 14px;
-      line-height: 1.5;
-      letter-spacing: 1px;
-      @include ellipsis(2)
     }
   }
 }
