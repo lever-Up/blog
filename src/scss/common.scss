@@ -1,33 +1,15 @@
 @import "./mixin.scss";
 
-@font-face {
-  font-family: "GKAI00MP";
-  src: url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.woff2") format("woff2"),
-  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.woff") format("woff"),
-  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.ttf") format("truetype"),
-  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.eot") format("embedded-opentype"),
-  url("//p85h88h3q.bkt.clouddn.com/GKAI00MP.svg") format("svg");
-}
-
-@font-face {
-  font-family: 'ArialBlack';
-  font-weight: normal;
-  font-style: normal;
-  src: url('https://res.suv666.com/carhouse/tuner/ab.woff'),
-  url('https://res.suv666.com/carhouse/tuner/ab.eot#iefix') format('embedded-opentype'),
-  url('https://res.suv666.com/carhouse/tuner/ab.woff') format('woff'),
-  url('https://res.suv666.com/carhouse/tuner/ab.TTF') format('truetype'),
-  url('https://res.suv666.com/carhouse/tuner/ab.svg') format('svg');
-}
-
-@font-face {
-  font-family: Gobold;
-  src: url("https://img.suv666.com/ui/ycyh/3_0/wxapp/Gobold%20Bold.ttf");
+@font-face {font-family: 'webfont';
+  src: url('//at.alicdn.com/t/webfont_xc5fsw8i9gh.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_xc5fsw8i9gh.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_xc5fsw8i9gh.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_xc5fsw8i9gh.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_xc5fsw8i9gh.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
 }
 
 #app {
-  /*font-family: 'Avenir', Helvetica, Arial, sans-serif;*/
-  font-family: ArialBlack;
+  font-family: webfont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -52,8 +34,6 @@ $border-sile: (tl:top-left, tr:top-right, bl:bottom-left, br:bottom-right);
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
-  transition: all .5s;
-  opacity: .5;
   width: 120px;
 }
 .read-more:hover{
@@ -111,6 +91,11 @@ $border-sile: (tl:top-left, tr:top-right, bl:bottom-left, br:bottom-right);
   transform: translate(-50%, -50%);
 }
 
+.flex-row-mid{
+  @include flex('row');
+  align-items: center;
+}
+
 .position-relative{
   position: relative;
 }
@@ -119,6 +104,34 @@ $border-sile: (tl:top-left, tr:top-right, bl:bottom-left, br:bottom-right);
   @include flex()
 }
 .flex-row{
-  @include flex('row')
+  @include flex(row)
+}
+.flex-column-center{
+  @include flex();
+  align-items: center;
+  justify-content: center;
+}
+.flex-row-center{
+  @include flex(row);
+  align-items: center;
+  justify-content: center;
+}
+
+.card-header{
+  line-height: 55px;
+  text-indent: 22px;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 5px;
+  background: #97a8be;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+button{
+  cursor: pointer;
+}
+button:hover{
+  border-color: #3a8ee6;
 }
 

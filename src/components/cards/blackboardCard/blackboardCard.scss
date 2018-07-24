@@ -1,0 +1,28 @@
+@import "../../../scss/index.scss";
+
+.blackboard-card {
+  background: #fff;
+  height: 100%;
+  .wall-img{
+    width: 100%;
+    height: 70%;
+  }
+  .text-content{
+    height: auto;
+  }
+
+  .img-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .5);
+    color: #fff;
+    height: 10%;
+  }
+
+}

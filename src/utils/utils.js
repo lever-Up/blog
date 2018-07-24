@@ -25,13 +25,12 @@ export const THEMES = [
   '#795548',
   '#9E9E9E',
   '#607D8B',
-  '#000000'
 ];
 
 export function randomColor() {
   return THEMES[Math.floor(Math.random() * THEMES.length + 1)];
 }
 
-export function formatTime(date) {
-  return dayJs(date).format('MMM DD, YYYY');
+export function formatTime(date, format = 'MMM DD, YYYY') {
+  return dayJs(date).format(format);
 }

@@ -1,0 +1,21 @@
+@import "../../../scss/index.scss";
+
+.small-list-card {
+  height: 100%;
+  @include flex();
+  .small-list-card-content{
+    background: #fff;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  button{
+    width: 100%;
+    line-height: 30px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #c0d7ef;
+    color: #3a8ee6;
+    margin: 17px 0;
+  }
+}

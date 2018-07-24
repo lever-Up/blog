@@ -1,0 +1,33 @@
+@import "../../../scss/index.scss";
+
+.item-card {
+  background: #fff;
+  height: 100%;
+  @include flex(row);
+  .item-img{
+    height: 100%;
+    width: 200px;
+    background-size: cover;
+  }
+  .text-content{
+    height: auto;
+    flex: 1;
+  }
+  .right-bar{
+    height: 100%;
+    width: 90px;
+    @include flex();
+    div{
+      border-left: 1px solid #c0d7ef;
+      flex: 1;
+      cursor: pointer;
+      transition: all .5s;
+    }
+    div:hover{
+      background: #c0d7ef;
+    }
+    div:first-child{
+      border-bottom: 1px solid #c0d7ef;
+    }
+  }
+}

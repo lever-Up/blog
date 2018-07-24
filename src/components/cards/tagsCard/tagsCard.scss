@@ -1,0 +1,21 @@
+@import "../../../scss/index.scss";
+
+.tags-card {
+  height: 100%;
+  .tags-list{
+    background: #fff;
+    height: 165px;
+    padding: 20px;
+  }
+  .tags-item{
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 20px;
+    line-height: 22px;
+    height: 32px;
+    margin-right: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}

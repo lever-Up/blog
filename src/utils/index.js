@@ -1,8 +1,9 @@
 /* 全局方法 */
-import {formatTime} from './utils';
+import {formatTime, randomColor} from './utils';
 
 const commonFn = [
-  formatTime
+  formatTime,
+  randomColor
 ];
 
 // Vue install

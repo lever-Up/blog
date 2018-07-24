@@ -13,18 +13,48 @@
     position: relative;
     margin-bottom: 28px;
     display: flex;
-    box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
   }
 
   .banner-box{
     height: 496px;
     background-color: #fff;
+    box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
     .banner-card{
       width: 56%;
       background: $main_bgColor;
     }
     .banner-insert{
       width: 44%;
+    }
+  }
+
+  .content-box{
+    .content-left{
+      min-width: 780px;
+      width: 100%;
+      margin-right: 30px;
+      .content_1{
+        width: 100%;
+        height: 570px;
+        margin-bottom: 28px;
+      }
+      .content_2{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 28px;
+      }
+    }
+    .content-right{
+      width: 450px;
+      background: transparent;
+      .content_1{
+        width: 100%;
+        margin-bottom: 28px;
+      }
+      .content_2{
+        width: 100%;
+        margin-bottom: 28px;
+      }
     }
   }
 }

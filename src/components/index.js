@@ -1,7 +1,9 @@
 'use strict'
 import SvgIcon from './SvgIcon.vue';
 import {toolbars, mavonEditor} from './MdReader';
-import { CarouselCard, PaginationCard } from './cards/cards.js';
+import { CarouselCard, PaginationCard, BlackboardCard, ItemCard, ListCard, GridCard, SmallListCard, TagsCard } from './cards/cards.js';
+import ArticleList from './article-list/list.vue';
+import SmallList from './small-list/small-list.vue';
 import Image from './Image.vue';
 
 /********************************
@@ -17,8 +19,17 @@ export { mavonEditor, toolbars }; // md 编辑器
 const components = [
   SvgIcon,
   Image,
+  ArticleList,
+  SmallList,
+
   CarouselCard,
-  PaginationCard
+  PaginationCard,
+  BlackboardCard,
+  ItemCard,
+  ListCard,
+  GridCard,
+  SmallListCard,
+  TagsCard
 ];
 
 // Vue install
