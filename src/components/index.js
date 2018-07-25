@@ -1,7 +1,11 @@
 'use strict'
 import SvgIcon from './SvgIcon.vue';
 import {toolbars, mavonEditor} from './MdReader';
-import { CarouselCard, PaginationCard, BlackboardCard, ItemCard, ListCard, GridCard, SmallListCard, TagsCard } from './cards/cards.js';
+import { CarouselCard, PaginationCard,
+  BlackboardCard, ItemCard, ListCard,
+  GridCard, SmallListCard, TagsCard,
+  SmallListWithImgCard,
+} from './cards/cards.js';
 import ArticleList from './article-list/list.vue';
 import SmallList from './small-list/small-list.vue';
 import Image from './Image.vue';
@@ -29,7 +33,8 @@ const components = [
   ListCard,
   GridCard,
   SmallListCard,
-  TagsCard
+  TagsCard,
+  SmallListWithImgCard
 ];
 
 // Vue install

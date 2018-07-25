@@ -1,0 +1,43 @@
+@import "../../../scss/index.scss";
+
+.small-list-with-img-card {
+  height: 100%;
+  @include flex();
+  &-content{
+    background: #fff;
+    padding: 10px 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  .article-img{
+    width: 60px;
+    height: 60px;
+  }
+  .list>:last-child {
+    .text-content{
+      border: none;
+    }
+  }
+  .text-content{
+    height: 80px;
+    .title{
+      font-size: 14px;
+    }
+    .desc, .time{
+      display: none;
+    }
+    .article-footer{
+      justify-content: flex-start;
+    }
+  }
+  button{
+    width: 275px;
+    line-height: 30px;
+    border-radius: 8px;
+    background: transparent;
+    border: 1px solid #c0d7ef;
+    color: #3a8ee6;
+    margin: 23px 20px;
+  }
+}
+
