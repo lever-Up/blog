@@ -15,3 +15,5 @@ export {default as SmallListCard} from './smallListCard/smallListCard.vue';
 export {default as TagsCard} from './tagsCard/tagsCard.vue';
 
 export {default as SmallListWithImgCard} from './smallListWithImgCard/smallListWithImgCard.vue';
+
+export {default as CourseCard} from './courseCard/courseCard.vue';

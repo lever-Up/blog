@@ -6,24 +6,23 @@
   width: 100%;
   min-height: 750px;
   >div{
-    padding-bottom: 28px;
+    //padding-bottom: 28px;
   }
   .clearfix{
     margin-left: auto;
     margin-right: auto;
     position: relative;
     display: flex;
-    min-width: 1152px;
-    width: 85%;
+    width: 1200px;
   }
 
   .bg-white{
     background-color: #fff;
-    box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
+    //box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
   }
   .bg-gray{
-    background-color: #eceff4;
-    box-shadow: 0 2px 4px 0 rgba(7,17,27,.06);
+    //background-color: #eceff4;
+    //box-shadow: 0 2px 4px 0 rgba(7,17,27,.06);
   }
 
   .banner-box{
@@ -39,7 +38,7 @@
   }
 
   .content-box{
-    padding: 28px 0;
+    padding: 28px 0 0;
     .content-left{
       min-width: 780px;
       width: 100%;
@@ -62,6 +61,13 @@
         width: 100%;
         margin-bottom: 28px;
       }
+    }
+  }
+
+  .course-list{
+    flex-wrap: wrap;
+    .course-card:last-child{
+      margin-right: 0;
     }
   }
 }

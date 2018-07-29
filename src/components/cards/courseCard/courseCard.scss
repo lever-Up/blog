@@ -1,0 +1,35 @@
+@import "../../../scss/index.scss";
+
+.course-card{
+  background: #fff;
+  width: 230px;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(7,17,27,.06);
+  cursor: pointer;
+  margin:0 10px 20px 0;
+  .wall-img{
+    width: 100%;
+    height: 120px;
+    border-radius: 8px;
+    background-size: cover;
+  }
+  .text-content{
+    height: auto;
+    padding: 12px 8px;
+    border: none;
+    border-top: 0;
+    margin-top: -5px;
+    .title{
+      font-size: 15px;
+      font-weight: normal;
+    }
+    .desc{
+      color: #a1a1a1;
+      font-size: 12px;
+    }
+  }
+  &:hover{
+    box-shadow: 0 12px 24px 0 rgba(7,17,27,.2);
+  }
+
+}

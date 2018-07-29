@@ -119,19 +119,32 @@ $border-sile: (tl:top-left, tr:top-right, bl:bottom-left, br:bottom-right);
 
 .card-header{
   line-height: 55px;
-  text-indent: 22px;
+  //text-indent: 22px;
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 5px;
-  background: #CBD3E0;
+  //background: #CBD3E0;
+  text-align: center;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+  position: relative;
+}
+.card-header::after{
+  background-color: #e1e1e1;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 30px;
 }
 
-button{
+.grid-card-btn{
   cursor: pointer;
 }
-button:hover{
-  border-color: #3a8ee6;
+.grid-card-btn:hover{
+  border-color: #e1e1e1;
 }
 

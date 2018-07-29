@@ -4,7 +4,7 @@ import {toolbars, mavonEditor} from './MdReader';
 import { CarouselCard, PaginationCard,
   BlackboardCard, ItemCard, ListCard,
   GridCard, SmallListCard, TagsCard,
-  SmallListWithImgCard,
+  SmallListWithImgCard, CourseCard,
 } from './cards/cards.js';
 import ArticleList from './article-list/list.vue';
 import SmallList from './small-list/small-list.vue';
@@ -34,7 +34,8 @@ const components = [
   GridCard,
   SmallListCard,
   TagsCard,
-  SmallListWithImgCard
+  SmallListWithImgCard,
+  CourseCard
 ];
 
 // Vue install

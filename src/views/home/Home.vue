@@ -48,7 +48,12 @@
     </div>
 
     <!--主题博文 图文模式-->
-    <div class="major-blog blog-img_card"></div>
+    <div class="bg-white">
+      <div class="card-header" style="margin-bottom: 20px">You May Also Like</div>
+      <div class="clearfix course-list">
+        <course-card v-for="i in 15" :key="i" :data="blackboardData"/>
+      </div>
+    </div>
 
     <!--主题博文 文章模式-->
     <div class="major-blog blog-txt_card"></div>

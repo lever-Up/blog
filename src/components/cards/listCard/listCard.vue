@@ -7,7 +7,7 @@
       </div>
     </div>
     <div class="list-card-footer">
-      <button>
+      <button class="grid-card-btn">
         <svg-icon icon-name="icon-fresh" iconStyle="height: 13px;width: 13px;"/>
         Refresh
       </button>
