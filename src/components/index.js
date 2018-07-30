@@ -9,6 +9,7 @@ import { CarouselCard, PaginationCard,
 import ArticleList from './article-list/list.vue';
 import SmallList from './small-list/small-list.vue';
 import Image from './Image.vue';
+import Pagination from './pagination/pagination.vue';
 
 /********************************
  * 组件export
@@ -25,6 +26,7 @@ const components = [
   Image,
   ArticleList,
   SmallList,
+  Pagination,
 
   CarouselCard,
   PaginationCard,

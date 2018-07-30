@@ -53,6 +53,7 @@
       <div class="clearfix course-list">
         <course-card v-for="i in 15" :key="i" :data="blackboardData"/>
       </div>
+      <pagination :total="2000" :pageSize="10" />
     </div>
 
     <!--主题博文 文章模式-->
