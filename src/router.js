@@ -7,6 +7,12 @@ Vue.use(Router);
 export default new Router({
   routes: [
     {
+      path: '/sign/signIn',
+      name: 'signIn',
+      component: function (resolve) {
+        require(['./views/sign/singIn.vue'], resolve)
+      }
+    }, {
       path: '/',
       name: 'Home',
       component: function (resolve) {

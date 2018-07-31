@@ -1,7 +1,7 @@
 <template>
   <transition name="fade">
     <div class="loading-background">
-      <img v-show="show" id="loading-background" alt="loading-background" src=""/>
+      <img id="loading-background" alt="loading-background" src=""/>
     </div>
 
   </transition>
@@ -14,30 +14,22 @@ export default {
   name: "singIn",
   data() {
     return {
-      loading: false
     };
   },
-  computed: {
-    show() {
-      return this.$store.state.isLoading;
-    }
-  },
   mounted() {
-    // setTimeout(() => {
-      const image = document.getElementById("loading-background");
-      image.onload = function() {
-        const engine = new RainyDay({
-          image: this,
-          enableSizeChange: false
-        });
-        engine.rain([[1, 2, 8000]]);
-        engine.rain([[3, 3, 0.88], [5, 5, 0.9], [6, 2, 1]], 100);
+    const image = document.getElementById("loading-background");
+    image.onload = function() {
+      const engine = new RainyDay({
+        image: this,
+        enableSizeChange: false
+      });
+      engine.rain([[1, 2, 8000]]);
+      engine.rain([[3, 3, 0.88], [5, 5, 0.9], [6, 2, 1]], 100);
 
-        this.loading = true;
-      };
-      image.crossOrigin = "anonymous";
-      image.src = "http://i.imgur.com/N7ETzFO.jpg";
-    // }, 0);
+      this.loading = true;
+    };
+    image.crossOrigin = "anonymous";
+    image.src = "http://i.imgur.com/N7ETzFO.jpg";
   }
 };
 </script>
