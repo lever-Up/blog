@@ -21,7 +21,7 @@
       </template>
 
       <!-- current 大于等于6， 6+6小于pages -->
-      <template v-else-if="currentPage >=6 && currentPage + 6 <= pages">
+      <template v-else-if="currentPage >=6 && currentPage + 5 <= pages">
         <li class="pagination-num" @click.stop="changePages(1)">1</li>
         <li class="pagination-num">...</li>
         <li class="pagination-num" @click.stop="changePages(currentPage - 2)">{{currentPage - 2}}</li>
@@ -35,7 +35,7 @@
 
       <!-- current 大于6， 6+6大于等于pages -->
       <template v-else>
-        <li class="pagination-num">1</li>
+        <li class="pagination-num"  @click.stop="changePages(1)">1</li>
         <li class="pagination-num">...</li>
         <li class="pagination-num"
             v-for="index in [pages - 5, pages - 4, pages - 3, pages - 2, pages - 1, pages]"
@@ -46,15 +46,6 @@
           {{index}}
         </li>
       </template>
-
-      <!--<li class="pagination-num"
-          v-for="index in pages"
-          :key="index"
-          :class="index === currentPage ? 'active' : ''"
-          @click.stop="changePages(index)"
-      >
-        {{index}}
-      </li>-->
 
       <li class="pagination-next"
           :class="currentPage === total ? 'pagination-disabled': ''"

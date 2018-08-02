@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <header-navigate />
     <router-view/>
     <Loading></Loading>
   </div>

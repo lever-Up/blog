@@ -1,0 +1,121 @@
+@import "../../scss/index.scss";
+
+.header-nav {
+  width: 100%;
+  height: 56px;
+  background: rgba(47,47,47,0.98);
+  z-index: 9999;
+  font-size: 14px;
+  .header-inner{
+    margin: 0 auto;
+    padding: 0 30px 0;
+    position: relative;
+  }
+
+  #logo{
+    float: left;
+    a{
+      display: block;
+      width: 76px;
+      height: 56px;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 40px;
+      background-image: url(../../images/logo.png);
+      transition: opacity 0.2s ease;
+    }
+    a:hover{
+      opacity: .5;
+    }
+    img{
+      width: 0;
+    }
+  }
+
+  // hover 显示
+  .head-down-box{
+    position: absolute;
+    background-color:  rgba(47,47,47,0.98);
+    min-width: 190px;
+    height: 0;
+    overflow: hidden;
+    transition: all 1s;
+    z-index: 9999;
+    li{
+      cursor: pointer;
+      background-color:  rgba(47,47,47,0.9);
+    }
+    li:hover{
+      background-color:  rgba(47,47,47,0.05);
+      color: #fff;
+    }
+  }
+
+  #nav{
+    color: #fff;
+    > li{
+      float: left;
+      a{
+        display: flex;
+        align-items: center;
+        height: 56px;
+        padding: 0 10px;
+        line-height: 56px;
+        text-decoration: none;
+        color: #999;
+        cursor: pointer;
+        transition: color .5s;
+      }
+    }
+    > li:hover{
+      color: #fff;
+      .head-down-box{
+        height: auto;
+      }
+    }
+    .nav-more{
+      background-image: url("../../images/icons/more.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 20px;
+      padding: 0 20px;
+    }
+  }
+  .sign-up {
+    float: right !important;
+  }
+  .sign-in {
+    float: right !important;
+    &-box{
+
+    }
+  }
+
+  .nav-search{
+    float: right !important;
+    height: 56px;
+    line-height: 56px;
+    margin-left: 10px;
+    &-text{
+      width: 200px;
+      padding: 5px 5px 5px 25px;
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      font-size: 13px;
+      font-weight: normal;
+      vertical-align: middle;
+      color: #bbb;
+      border: none;
+      background-color: #fff;
+      background-repeat: no-repeat;
+      background-position: 3px 50%;
+      background-size: 20px;
+      background-image: url(../../images/icons/search-icon.png);
+      border-radius: 4px;
+    }
+  }
+  input:focus{
+    border: 0;
+    box-shadow: none;
+    outline: 0;
+  }
+}

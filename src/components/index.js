@@ -1,15 +1,15 @@
 'use strict'
 import SvgIcon from './SvgIcon.vue';
 import {toolbars, mavonEditor} from './MdReader';
-import { CarouselCard, PaginationCard,
-  BlackboardCard, ItemCard, ListCard,
-  GridCard, SmallListCard, TagsCard,
-  SmallListWithImgCard, CourseCard,
+import {
+  CarouselCard, PaginationCard, BlackboardCard, ItemCard, ListCard,
+  GridCard, SmallListCard, TagsCard, SmallListWithImgCard, CourseCard,
 } from './cards/cards.js';
 import ArticleList from './article-list/list.vue';
 import SmallList from './small-list/small-list.vue';
 import Image from './Image.vue';
 import Pagination from './pagination/pagination.vue';
+import Header from './header/header.vue';
 
 /********************************
  * 组件export
@@ -27,6 +27,7 @@ const components = [
   ArticleList,
   SmallList,
   Pagination,
+  Header,
 
   CarouselCard,
   PaginationCard,
