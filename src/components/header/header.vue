@@ -21,13 +21,13 @@
         </li>
         <li class="sign-in">
           <!--登录-->
-          <a>Sign In</a>
+          <a href="/login">Sign In</a>
           <div class="head-down-box sign-in-box">
             <ul>
-              <li><a><svg-icon icon-name="icon-wx" icon-style="margin-right:10px"/> 微信登录</a></li>
-              <li><a><svg-icon icon-name="icon-qq" icon-style="margin-right:10px"/> QQ登录</a></li>
-              <li><a><svg-icon icon-name="icon-mobile-cover" icon-style="margin-right:10px"/> 手机登录</a></li>
-              <li><a><svg-icon icon-name="icon-email" icon-style="margin-right:10px"/> 邮箱登录</a></li>
+              <li><a href="/login"><svg-icon icon-name="icon-wx" icon-style="margin-right:10px"/> 微信登录</a></li>
+              <li><a href="/login"><svg-icon icon-name="icon-qq" icon-style="margin-right:10px"/> QQ登录</a></li>
+              <li><a href="/login"><svg-icon icon-name="icon-mobile-cover" icon-style="margin-right:10px"/> 手机登录</a></li>
+              <li><a href="/login"><svg-icon icon-name="icon-email" icon-style="margin-right:10px"/> 邮箱登录</a></li>
             </ul>
           </div>
         </li>

@@ -1,0 +1,131 @@
+.loading-background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+/* 登录注册 */
+.sing-box{
+  position: absolute;
+  z-index: 999;
+  box-shadow: 0 15px 35px rgba(255,255,255,.7);
+  width: 400px;
+  height: 600px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  padding: 40px 0;
+}
+.sing-tab-wrap{
+
+}
+.tab-item{
+  flex: 1;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  .tab-label{
+    width: 100px;
+    height: 40px;
+    display: inline-block;
+    text-space: 10px;
+    letter-spacing: 5px;
+    text-indent: 5px;
+    border-bottom: 2px solid transparent;
+    &.active{
+      border-bottom: 2px solid #fff;
+    }
+  }
+}
+.sing-in-form{
+  padding: 40px 0;
+  label{
+    width: 80px;
+    display: inline-block;
+    text-align: center;
+  }
+  > div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  input{
+    height: 40px;
+    width: 250px;
+    border: 0;
+    line-height: 40px;
+    font-size: 20px;
+    text-indent: 20px;
+    border-radius: 5px;
+  }
+  .code-num{
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  .sing-footer{
+    padding: 0 80px;
+    display: block;
+    .sing-btn{
+      width: 120px;
+      height: 36px;
+      line-height: 36px;
+      cursor: pointer;
+      background-color: transparent;
+      border: 2px solid #2196F3;
+      border-radius: 20px;
+      color: #fff;
+      box-sizing: content-box;
+    }
+    .sing-btn:hover{
+      background-color: #2196F3;
+    }
+  }
+}
+.forget-password{
+  text-decoration: underline;
+  text-underline-position: under;
+}
+.under-footer{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+}
+.under-label{
+  &::before{
+    content: '';
+    background-color: #fff;
+    width: 100px;
+    height: 1px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    transform: scaleY(.5);
+  }
+  &::after{
+    content: '';
+    background-color: #fff;
+    width: 100px;
+    height: 1px;
+    transform: scaleY(.5);
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+}
+.under-icons{
+  justify-content: space-around;
+  margin: 25px;
+}

@@ -46,13 +46,20 @@
       background-color:  rgba(47,47,47,0.9);
     }
     li:hover{
-      background-color:  rgba(47,47,47,0.05);
+      background-color:  rgba(255,255,255,0.1);
       color: #fff;
     }
   }
 
   #nav{
     color: #fff;
+    .nav-more{
+      background-image: url("../../images/icons/more.png");
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 20px;
+      padding: 0 20px;
+    }
     > li{
       float: left;
       a{
@@ -68,17 +75,15 @@
       }
     }
     > li:hover{
-      color: #fff;
+      > a{
+        color: #fff;
+      }
       .head-down-box{
         height: auto;
       }
-    }
-    .nav-more{
-      background-image: url("../../images/icons/more.png");
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      background-size: 20px;
-      padding: 0 20px;
+      .nav-more{
+        background-image: url("../../images/icons/more-active.png");
+      }
     }
   }
   .sign-up {

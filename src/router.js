@@ -5,9 +5,10 @@ import HelloWorld from './views/HelloWorld.vue'
 Vue.use(Router);
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
-      path: '/sign/signIn',
+      path: '/login',
       name: 'signIn',
       component: function (resolve) {
         require(['./views/sign/singIn.vue'], resolve)
